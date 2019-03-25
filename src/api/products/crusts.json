@@ -1,0 +1,37 @@
+[
+  {
+    "id":1,
+    "crustDesc": "Original Pan® Pizza(1)",
+    "crustImg": "./assets/images/sidebar/icon_crust_pan.png",
+    "crustFullImg": "./assets/images/crust/crust_pan_NoFinish.png",
+    "selected":true
+  },
+  {
+    "id":2,
+    "crustDesc": "Hand Tossed Pizza(2)",
+    "crustImg": "./assets/images/sidebar/icon_crust_ht.png",
+    "crustFullImg": "./assets/images/crust/crust_ht_NoFinish.png",
+    "selected":false
+  },
+  {
+    "id":3,
+    "crustDesc": "Thin ‘N Crispy(3)",
+    "crustImg": "./assets/images/sidebar/icon_crust_thin.png",
+    "crustFullImg": "./assets/images/crust/crust_thin_NoFinish.png",
+    "selected":false
+  },
+  {
+    "id":4,
+    "crustDesc": "Original Stuffed Crust(4)",
+    "crustImg": "./assets/images/sidebar/icon_crust_sc.png",
+    "crustFullImg": "./assets/images/crust/crust_sc_NoFinish.png",
+    "selected":false
+  },
+  {
+    "id":5,
+    "crustDesc": "Ultimate Cheesy Crust(5)",
+    "crustImg": "./assets/images/sidebar/icon_crust_UCC.png",
+    "crustFullImg": "./assets/images/crust/crust_UCC_ButteryBlend.png",
+    "selected":false
+  }
+]

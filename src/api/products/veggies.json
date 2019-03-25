@@ -1,0 +1,58 @@
+[
+    {
+      "id":1,
+      "veggieDesc": "Mushroom(1)",
+      "veggieImg": "./assets/images/sidebar/icon_topping_Mushroom.png",
+      "veggieFullImg": "./assets/images/topping/topping_Mushroom_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":2,
+      "veggieDesc": "Roasted Spinach(2)",
+      "veggieImg": "./assets/images/sidebar/icon_topping_Spinach_fresh.png",
+      "veggieFullImg": "./assets/images/topping/topping_Spinach_Fresh_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":3,
+      "veggieDesc": "Red Onions(3)",
+      "veggieImg": "./assets/images/sidebar/icon_topping_Onion_Red.png",
+      "veggieFullImg": "./assets/images/topping/topping_Onion_red_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":4,
+      "veggieDesc": "Black Olives(4)",
+      "veggieImg": "./assets/images/sidebar/icon_topping_Olive_black.png",
+      "veggieFullImg": "./assets/images/topping/topping_Olives_black_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":5,
+      "veggieDesc": "Green Bell Peppers(5)",
+      "veggieImg": "./assets/images/sidebar/icon_topping_GreenBellPepper.png",
+      "veggieFullImg": "./assets/images/topping/topping_GreenBellPepper_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":6,
+      "veggieDesc": "Banana Peppers(6)",
+      "veggieImg": "./assets/images/sidebar/icon_topping_BananaPepper.png",
+      "veggieFullImg": "./assets/images/topping/topping_BananaPepper_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":7,
+      "veggieDesc": "Pineapple(7)",
+      "veggieImg": "./assets/images/sidebar/icon_topping_Pineapple.png",
+      "veggieFullImg": "./assets/images/topping/topping_Pineapple_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":8,
+      "veggieDesc": "Jalapeño Peppers(8)",
+      "veggieImg": "./assets/images/sidebar/icon_topping_Jalapeno.png",
+      "veggieFullImg": "./assets/images/topping/topping_Jalepeno_ML_reg.png",
+      "selected":false
+    }
+  ]

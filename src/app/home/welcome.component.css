@@ -1,0 +1,33 @@
+.crust-item{
+    margin-bottom:20px;
+    border: 1px solid #ccc;
+}
+.crust-item:hover{
+    cursor: pointer;
+}
+.crust-desc{
+    padding-top:25px;
+    font-size:16px;
+    font-weight: bold;
+}
+.pizza-view{
+    
+    height:550px;
+}
+.items-view{
+    padding:10px;
+}
+.meat-item{
+    margin:10px 15px;
+    border: 1px solid #ccc;
+}
+.meat-desc{
+    padding: 30px 3px 0px 3px;
+    font-size:16px;
+    font-weight: bold;
+}
+.rvw-desc{
+    padding-top:5px;
+    font-size:16px;
+    font-weight: bold;
+}

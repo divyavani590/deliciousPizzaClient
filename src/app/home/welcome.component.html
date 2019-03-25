@@ -1,0 +1,134 @@
+﻿<div class="card">
+  <div class="card-header">
+    {{pageTitle}}
+  </div>
+  <div class="card-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 items-view">
+          <div class="row">
+            <ng-container *ngIf="currentStep == 'step1'">
+              <div class="col-md-12 crust-item" (click)="selectPizza(crust)" *ngFor='let crust of crustTypes'>
+                <div class="row">
+                  <div class="col-md-4" style="height: 75px; width: 150px;overflow:hidden;">
+                    <img class="card-img-top" width="100px;" height="150px;" [src]="crust.crustImg">
+                  </div>
+                  <div class="col-md-6 crust-desc" style="background: #fff;">
+                    <p class="card-text">{{crust.crustDesc}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <input type="button" value="Select Meats" (click)="currentStep = 'step2'" class="btn btn-primary">
+              </div>
+            </ng-container>
+
+            <ng-container *ngIf="currentStep == 'step2'">
+              <div class="col-md-5 meat-item" (click)="selectMeatTops(meat)" *ngFor='let meat of meatTypes'>
+                <div class="row">
+                  <div class="col-md-6" style="padding-left:0px;">
+                    <img class="" width="120px;" height="100px;" [src]="meat.meatImg">
+                  </div>
+                  <div class="col-md-6 meat-desc" style="background: #fff;">
+                    <p class="card-text">{{meat.meatDesc}}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col text-center">
+                <input type="button" value="Select Veggies" (click)="currentStep = 'step3'" class="btn btn-primary">
+              </div>
+            </ng-container>
+
+            <ng-container *ngIf="currentStep == 'step3'">
+              <div class="col-md-5 meat-item" (click)="selectVeggieTops(veggie)" *ngFor='let veggie of veggieTypes'>
+                <div class="row">
+                  <div class="col-md-6" style="padding-left:0px;">
+                    <img class="" width="120px;" height="100px;" [src]="veggie.veggieImg">
+                  </div>
+                  <div class="col-md-6 meat-desc" style="background: #fff;">
+                    <p class="card-text">{{veggie.veggieDesc}}</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-12 text-center">
+                <input type="button" value="Review" (click)="createReview();currentStep = 'step4'"
+                  class="btn btn-primary">
+              </div>
+            </ng-container>
+
+            <ng-container *ngIf="currentStep == 'step4'">
+              <div class="col-md-12" style="border:1px solid #ccc;  margin:2px;">
+                <h1>Crust</h1>
+                <div class="row">
+
+                  <div class="col-md-4" *ngFor='let crust of crustTypes' [hidden]="!crust.selected">
+                    <div style="height: 75px; width: 150px;overflow:hidden;">
+                      <img class="card-img-top" width="100px;" height="150px;" [src]="crust.crustImg"
+                        alt="Card image cap">
+                    </div>
+                    <div class="rvw-desc" style="background: #fff;">
+                      <p class="card-text">{{crust.crustDesc}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12" style="border:1px solid #ccc; margin:2px;">
+                <h1 *ngIf="showMeatsReview">Meats</h1>
+                <div class="row">
+
+                  <div class="col-md-4" *ngFor='let meat of meatTypes' [hidden]="!meat.selected">
+                    <div>
+                      <img class="card-img-top" width="100px;" height="100px;" [src]="meat.meatImg"
+                        alt="Card image cap">
+                    </div>
+                    <div class="rvw-desc" style="background: #fff;">
+                      <p class="card-text">{{meat.meatDesc}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12" style="border:1px solid #ccc; margin:2px;">
+                <h1 *ngIf="showVeggiesReview">Veggies</h1>
+                <div class="row">
+
+                  <div class="col-md-4" *ngFor='let veggie of veggieTypes' [hidden]="!veggie.selected">
+                    <div>
+                      <img class="card-img-top" width="100px;" height="100px;" [src]="veggie.veggieImg"
+                        alt="Card image cap">
+                    </div>
+                    <div class="rvw-desc" style="background: #fff;">
+                      <p class="card-text">{{veggie.veggieDesc}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col text-center">
+                <input type="button" value="Confirm" (click)="currentStep = 'step5'" class="btn btn-primary">
+              </div>
+            </ng-container>
+
+            <ng-container *ngIf="currentStep == 'step5'">
+              <div class="text-center">
+                <h1> Your Order is Confirmed, Thanks for your Order! </h1>
+              </div>
+              <div class="col text-center">
+                <input type="button" value="Order Another Pizza" (click)="currentStep = 'step1'" class="btn btn-primary">
+              </div>
+            </ng-container>
+          </div>
+        </div>
+        <div id="pizza" class="col-md-6 pizza-view">
+          <img [src]="pizzaImg" style="position: absolute;">
+          <img style="position: absolute; width:500px; height:500px; left:23px; top:10px;"
+            src="./assets/images/topping/cheese_mozz_ML.png">
+          <img style="position: absolute;" [src]="meat.meatFullImg" *ngFor="let meat of meatTops">
+          <img style="position: absolute;" [src]="veggie.veggieFullImg" *ngFor="let veggie of veggieTops">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

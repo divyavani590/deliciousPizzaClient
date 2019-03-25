@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+div.card-header {
+ font-size: large;
+}
+
+div.card {
+  margin-top: 10px
+}
+
+.table {
+  margin-top: 10px
+}
+body{
+  background: url('./assets/images/bg.jpg') no-repeat;
+  background-size: 100%;
+}
+.bg-light {
+  background-color: coral!important;
+  color: #FFF;  
+  font-weight: bold;
+  font-size: 20px;  
+  text-align: center;
+  display: block;
+}
+.bg-light a{
+  font-size: 24px;
+}

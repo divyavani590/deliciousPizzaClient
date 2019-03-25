@@ -1,0 +1,58 @@
+[
+    {
+      "id":1,
+      "meatDesc": "Bacon(1)",
+      "meatImg": "./assets/images/sidebar/icon_topping_Bacon.png",
+      "meatFullImg": "./assets/images/topping/topping_Bacon_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":2,
+      "meatDesc": "Beef(2)",
+      "meatImg": "./assets/images/sidebar/icon_topping_Beef.png",
+      "meatFullImg": "./assets/images/topping/topping_Beef_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":3,
+      "meatDesc": "Grilled Chicken(3)",
+      "meatImg": "./assets/images/sidebar/icon_topping_Chicken.png",
+      "meatFullImg": "./assets/images/topping/topping_Chicken_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":4,
+      "meatDesc": "Ham(4)",
+      "meatImg": "./assets/images/sidebar/icon_topping_Ham.png",
+      "meatFullImg": "./assets/images/topping/topping_Ham_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":5,
+      "meatDesc": "Meatball(5)",
+      "meatImg": "./assets/images/sidebar/icon_topping_Meatball.png",
+      "meatFullImg": "./assets/images/topping/topping_Meatball_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":6,
+      "meatDesc": "Pepperoni(6)",
+      "meatImg": "./assets/images/sidebar/icon_topping_Pepperoni.png",
+      "meatFullImg": "./assets/images/topping/topping_Pepperoni_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":7,
+      "meatDesc": "Pork(7)",
+      "meatImg": "./assets/images/sidebar/icon_topping_Pork.png",
+      "meatFullImg": "./assets/images/topping/topping_Pork_ML_reg.png",
+      "selected":false
+    },
+    {
+      "id":8,
+      "meatDesc": "Italian Sausage(8)",
+      "meatImg": "./assets/images/sidebar/icon_topping_ItalianSausage.png",
+      "meatFullImg": "./assets/images/topping/topping_ItalianSausage_ML_reg.png",
+      "selected":false
+    }
+  ]
