@@ -86,6 +86,9 @@ export class WelcomeComponent implements OnInit, OnDestroy{
 
   updatePage(){
     if(this.responseObj.intent == "SelectCrustIntent"){
+      this.crustTypes.forEach((item) => {        
+          item.selected = false;                
+      }); 
       this.crustTypes.forEach((item) => {
         if(item.id == this.responseObj.message){
           item.selected = true;
